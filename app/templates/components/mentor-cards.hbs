@@ -1,0 +1,24 @@
+<article class="listing">
+  <a onclick={{action "toggleDescription"}} class="image"role="button">
+    <img src={{this.mentor.image}} alt="">
+  </a>
+
+  <div class="details">
+    <h3>{{this.mentor.title}}</h3>
+    <div class="detail description  {{if this.isDescriptionVisible "descriptionVisible"}}">
+      {{this.mentor.description}}
+    </div>
+    <div class="detail company">
+      <span>Company:</span> {{this.mentor.company}}
+    </div>
+    <div class="detail type">
+      <span>Position:</span> {{this.mentor.category}}
+    </div>
+    <div class="detail location">
+      <span>Location:</span> {{this.mentor.city}}
+    </div>
+    <div class="detail bedrooms">
+      <span>Available time slots:</span> {{this.mentor.timeslots}}
+    </div>
+  </div>
+</article>

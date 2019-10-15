@@ -1,0 +1,9 @@
+<div class="jumbo">
+  <div class="right teacher teaching"></div>
+  <h2>Welcome!</h2>
+  <p>To Akanksha's EmberJS session </p>
+</div>
+
+{{#each this.model as |mentorInfo|}}
+  <MentorCards @mentor={{mentorInfo}} />
+{{/each}}
